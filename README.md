@@ -4,17 +4,21 @@
 ## 輸出結果
 #### Perceptron
 1. 訓練走勢圖
+
 ![](https://i.imgur.com/0wG1wsf.png)
 
 2. 分類平面圖
+
 ![](https://i.imgur.com/whm9uvu.png)
 
 
 #### Adaline
 1. 訓練走勢圖
+
 ![](https://i.imgur.com/MNGu5rg.png)
 
 2. 分類平面圖
+
 ![](https://i.imgur.com/YFH48Ze.png)
 ## 安裝所需套件
 #### 1. 開啟 terminal 並且進入專案所在的資料夾
