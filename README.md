@@ -14,7 +14,7 @@
 
 
 # Perceptron Adaline
-Implement Machine Learning Algorithm - Perceptron &amp; Adaline
+Implement Machine Learning Algorithm - Perceptron &amp; Adaline with Python
 
 ## Install Package
 #### 1. Open command line and cd into yours clone project folder
