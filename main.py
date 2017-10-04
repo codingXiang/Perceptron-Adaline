@@ -4,7 +4,7 @@ from Data import Dataset
 if __name__ == "__main__":
     dataset = Dataset('iris.txt')
     perceptron = Perceptron(dataset , learning_rate = 0.5)
-    adaline = Adaline(dataset , learning_rate = 0.005 , n_iter = 100)
+    adaline = Adaline(dataset , learning_rate = 0.01 , n_iter = 100)
     adaline.draw('training_process' ,
               xlabel = 'Epochs' ,
               ylabel = 'Number of misclassifications',
