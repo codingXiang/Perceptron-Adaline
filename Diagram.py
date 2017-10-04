@@ -23,13 +23,13 @@ class Diagram(object):
         w = self.classifier.w_
         input_data = self.classifier.training_data
         fig = plt.figure()
-        ax1 = fig.add_subplot(111)
-        ax1.scatter(input_data[:50 , 0] , input_data[:50 , 1] , color = 'red' , marker = 'o' , label = 'setosa')
-        ax1.scatter(input_data[50:100 , 0] , input_data[50:100 , 1] , color = 'blue' , marker = 'x' , label = 'versicolor')
+        ax = fig.add_subplot(111)
+        ax.scatter(input_data[:50 , 0] , input_data[:50 , 1] , color = 'red' , marker = 'o' , label = 'setosa')
+        ax.scatter(input_data[50:100 , 0] , input_data[50:100 , 1] , color = 'blue' , marker = 'x' , label = 'versicolor')
         input_data_min , input_data_max = input_data[: , 0].min() - 1 , input_data[: , 0].max() + 1
-        l = np.linspace(input_data_min , input_data_max)
+        x = np.linspace(input_data_min , input_data_max)
         a , b = -w[1]/w[2], -w[0]/w[2]
-        ax1.plot(l, a * l + b, 'b-')
+        ax.plot(x, a * x + b, 'k-')
 
     def training_progress_diagram(self):
         pass

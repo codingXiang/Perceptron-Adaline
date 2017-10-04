@@ -8,20 +8,20 @@ if __name__ == "__main__":
     adaline.draw('training_process' ,
               xlabel = 'Epochs' ,
               ylabel = 'Number of misclassifications',
-              title = 'Adaline Training Progress',
+              title = 'Adaline Training Progress - learning rate = ' + str(adaline.learning_rate),
               legend_loc = 'upper left')
     adaline.draw('classification_line',
               xlabel = 'petal length' ,
               ylabel = 'sepal length',
-              title = 'Adaline Linear Separability',
+              title = 'Adaline Linear Separability - learning rate = ' + str(adaline.learning_rate),
               legend_loc = 'upper left')
     perceptron.draw('training_process' ,
               xlabel = 'Epochs' ,
               ylabel = 'Number of misclassifications',
-              title = 'Perceptron Training Progress',
+              title = 'Perceptron Training Progress - learning rate = ' + str(perceptron.learning_rate),
               legend_loc = 'upper left')
     perceptron.draw('classification_line',
               xlabel = 'petal length' ,
               ylabel = 'sepal length',
-              title = 'Perceptron Linear Separability',
+              title = 'Perceptron Linear Separability - learning rate = ' + str(perceptron.learning_rate),
               legend_loc = 'upper left')
